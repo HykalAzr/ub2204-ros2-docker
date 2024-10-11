@@ -1,0 +1,8 @@
+# To run the container use: 
+docker run -it --name=ub2204-ros2-cont-v1 ub2204-ros2-v1 /bin/bash
+
+# To restart and remain changes made use:
+docker start ub2204-ros2-cont-v1 && docker attach ub2204-ros2-cont-v1
+
+# To restart and remain changes made to last opened container use:
+docker start `docker ps -q -l` && docker attach `docker ps -q -l`
